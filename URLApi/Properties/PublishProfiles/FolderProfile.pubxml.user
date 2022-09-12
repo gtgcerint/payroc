@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Projects\PayRoc\Publish</_PublishTargetUrl>
+    <History>True|2022-09-08T21:13:32.7725169Z;True|2022-09-08T22:11:25.3881059+01:00;True|2022-09-08T22:08:27.3115882+01:00;True|2022-09-08T22:04:29.2503344+01:00;True|2022-09-08T22:02:11.3870046+01:00;True|2022-09-08T21:59:14.2167407+01:00;True|2022-09-08T21:57:26.6607637+01:00;True|2022-09-08T21:53:26.4533956+01:00;True|2022-09-08T21:47:23.6437714+01:00;True|2022-09-08T21:30:36.3720073+01:00;True|2022-09-08T21:29:41.6779860+01:00;</History>
+  </PropertyGroup>
+</Project>

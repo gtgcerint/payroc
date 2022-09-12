@@ -1,0 +1,30 @@
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <input id="longUrl" name="longUrl" placeholder="Paste Your Url" style="width: 500px"/>
+    <button id="Convert">Convert</button><br /><br/>
+    <input id="shortUrl" name="shortUrl" readonly style="width: 250px"/>
+</div>
+
+<script  src="https://code.jquery.com/jquery-3.6.1.min.js"  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="  crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $("#Convert").click(function (e) {
+
+                $.ajax({
+                    type: "POST",
+                    url: "https://url.cerint.org/Url?longUrl=" + encodeURIComponent($("#longUrl").val()),
+                    dataType: "json",
+                    success: function (result, status, xhr) {
+                        alert(result.url);
+                        $("#shortUrl").val(result.url);
+                    },
+                    error: function (xhr, status, error) {
+                        alert("Result: " + status + " " + error + " " + xhr.status + " " + xhr.statusText)
+                    }
+                });
+
+        });
+
+
+    });
+</script>
